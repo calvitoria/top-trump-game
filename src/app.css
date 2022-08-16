@@ -1,0 +1,272 @@
+body {
+  background-color: rgb(54, 54, 54);
+  color: rgb(255, 255, 255);
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline: 60px;
+}
+
+header {
+  padding: 20px;
+  background-color: #212121;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.underlinedPink {
+  text-decoration: underline;
+  text-decoration-color: #c65d8d;
+  text-decoration-thickness: 3px;
+}
+
+header img {
+  width: 50px;
+}
+
+.textHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.textHeader h4, p {
+  padding: 2px 0;
+  margin: 0 20px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.textHeader h4 {
+  font-weight: 800;
+  color: #c65d8d;
+  text-transform: uppercase;
+}
+
+.formContainer {
+  background-color: #212121;
+  padding: 10px 40px;
+  border-radius: 0.5em;
+  border: 3px solid #c65d8d;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  max-width: 200px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.att {
+  font-size: 14px;
+  color: #8a6776;
+  align-self: flex-start;
+  margin-left: 0;
+}
+
+form input, textarea, label {
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 5px;
+  display: block;
+  align-items: flex-start;
+}
+
+input, textarea {
+  color: #c65d8d;
+  font-weight: 600;
+}
+
+input::placeholder, textarea::placeholder {
+  font-weight: 400;
+}
+
+.attributesP {
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+.trumpCheck {
+  align-self: flex-start;
+  display: flex;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.10em;
+  height: 1.10em;
+  border-radius: 0.15em;
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: #c65d8d;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+  outline: max(0.8px, 0.10em) solid currentColor;
+  outline-offset: max(0.8px, 0.10em);
+  color: #d16797;
+}
+
+.trumpCheck input {
+ margin-left: 7px;
+}
+
+.iconTrump {
+  font-size: 14px;
+  align-self: center;
+  margin-left: 60px;
+}
+
+.rarenessSelect {
+  align-self: flex-start;
+
+}
+
+.rarenessSelect select {
+  margin-left: 10px;
+  padding: 2px 7px;
+  color: #c65d8d;
+  margin-left: 15px;
+}
+
+label {
+  text-align: left;
+}
+
+input[type="number"] {
+ width: 175px;
+}
+
+.pTrunf {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #8a6776;
+}
+.card {
+  color: #212121;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(245, 245, 220);
+  background-color: rgb(245, 245, 220);
+  border-radius: 0.5em;
+  box-shadow: rgba(7, 6, 6, 0.35) 0px 5px 15px;
+}
+
+.atributes {
+  border-radius: 0.5em;
+  text-align: left;
+  font-size: 16px;
+  margin: 4px 10px;
+}
+
+.innerCard {
+  background-color: #C76660;
+  border: 3px solid #C76660;
+  border-radius: 0.5em;
+  margin: 10px;
+  padding: 10px 0 0 0;
+}
+
+.card img{
+  width: 200px;
+  border-radius: 0.5em;
+  margin-bottom: -10;
+  padding: 0;
+}
+
+.elementCard {
+  display: block;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.name-card {
+  background-color: #89BEC0;
+  font-size: 18px;
+  border-radius: 1em;
+  padding: 2px 0;
+  margin: 0;
+}
+
+.card p {
+  text-align: left;
+  margin: 0;
+  padding: 5px 0;
+
+}
+
+.descricao {
+  max-width: 200px;
+  font-size: 12px;
+}
+
+.createdCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardDeck {
+  margin: 5px 10px;
+}
+
+.deleteBtn {
+  display: block;
+  width: 252px;
+  margin-left: 10px;
+  border-radius: 0.5em;
+}
+
+button {
+  background-color: #c65d8d;
+  cursor: pointer;
+  padding: 6px 28px;
+  color: white;
+  border: 2px solid #d16797;
+  margin-bottom: 25px;
+  border-radius: 1em;
+}
+
+button:disabled{
+  background-color: #8a6776;
+  cursor: pointer;
+  padding: 6px 28px;
+  color: rgb(165, 158, 158);
+  border: 2px solid #8a6776;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  border-radius: 1em;
+}
+
+.createdCards {
+  display: flex;
+  flex-direction: column;
+}
